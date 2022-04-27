@@ -1,0 +1,57 @@
+@import "components/header";
+@import "components/formularios";
+@import "components/icono";
+@import "components/store";
+@import "components/contacto";
+
+body{
+    background-color:rgb(247, 238, 225);
+}
+
+.image-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    }
+
+.empresa{
+    padding-top: 4rem;
+    border-top: 1rem, rgb(255, 136, 0), solid;
+   }
+
+.logo-chico{
+    width: 8rem;
+}
+
+footer{
+    padding-top: 4rem;
+    width: 100%;
+    border-top: 1rem, rgb(255, 136, 0), solid;
+}
+
+#modificable{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration: solid;
+    text-shadow: 1rem;
+}
+
+#tablita{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    table-layout: auto;
+    th{
+        border: 1px, solid;
+        padding: 1rem;
+    }
+    tr{
+        td{
+            border: 2px,solid;
+            padding: 1rem;
+        }
+        
+    }
+}   

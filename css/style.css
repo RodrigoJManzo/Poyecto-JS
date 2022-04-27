@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap";
+#burger-toggle {
+  position: absolute;
+  appearance: none;
+  opacity: 0;
+}
+#burger-toggle:checked ~ .menu {
+  opacity: 1;
+  visibility: visible;
+}
+#burger-toggle:checked ~ .menu .menu-nav-link span div,
+#burger-toggle:checked ~ .menu img,
+#burger-toggle:checked ~ .menu .title p {
+  transform: translateY(0);
+  transition: 1.2s 0.1s cubic-bezier(0.35, 0, 0.07, 1);
+}
+#burger-toggle:checked ~ .menu .image-link:nth-child(1) img {
+  transition-delay: 0.18s;
+}
+#burger-toggle:checked ~ .menu .image-link:nth-child(2) img {
+  transition-delay: 0.26s;
+}
+#burger-toggle:checked ~ .menu .image-link:nth-child(3) img {
+  transition-delay: 0.34s;
+}
+#burger-toggle:checked ~ .menu .image-link:nth-child(4) img {
+  transition-delay: 0.42s;
+}
+#burger-toggle:checked ~ .burger-menu .line::after {
+  transform: translateX(0);
+}
+#burger-toggle:checked ~ .burger-menu .line:nth-child(1) {
+  transform: translateY(calc(var(--burger-menu-radius) / 5)) rotate(45deg);
+}
+#burger-toggle:checked ~ .burger-menu .line:nth-child(2) {
+  transform: scaleX(0);
+}
+#burger-toggle:checked ~ .burger-menu .line:nth-child(3) {
+  transform: translateY(calc(var(--burger-menu-radius) / -5)) rotate(-45deg);
+}
+
+.burger-menu {
+  --burger-menu-radius: 4em;
+  position: fixed;
+  top: 5vh;
+  left: 5vw;
+  z-index: 100;
+  display: block;
+  width: var(--burger-menu-radius);
+  height: var(--burger-menu-radius);
+  outline: none;
+  cursor: pointer;
+}
+.burger-menu .line {
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  height: 3px;
+  background: rgba(43, 61, 79, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.burger-menu .line:nth-child(1) {
+  top: 30%;
+}
+.burger-menu .line:nth-child(2) {
+  top: 50%;
+}
+.burger-menu .line:nth-child(3) {
+  top: 70%;
+}
+.burger-menu .line::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color-darker);
+  transform: translateX(-100%);
+  transition: 0.25s;
+}
+.burger-menu .line:nth-child(2)::after {
+  transition-delay: 0.1s;
+}
+.burger-menu .line:nth-child(3)::after {
+  transition-delay: 0.2s;
+}
+.burger-menu:hover .line::after {
+  transform: translateX(0);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1a1e23;
+  opacity: 0;
+  overflow-x: hidden;
+  visibility: hidden;
+  transition: 0.3s;
+}
+@media screen and (max-width: 480px) {
+  .menu {
+    display: block;
+  }
+}
+.menu-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+@media screen and (max-width: 480px) {
+  .menu-nav {
+    flex-direction: column;
+  }
+}
+.menu-nav-item {
+  flex: 1;
+}
+.menu-nav-link {
+  position: relative;
+  display: inline-flex;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+.menu-nav-link span {
+  overflow: hidden;
+}
+.menu-nav-link span div {
+  transform: translateY(102%);
+}
+.menu-nav-link::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--primary-color);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.menu-nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.menu .gallery {
+  margin-top: 60px;
+  text-align: center;
+}
+.menu .title {
+  font-size: 24px;
+  color: white;
+  overflow: hidden;
+}
+.menu .title p {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transform: translateY(102%);
+}
+.menu .images {
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 480px) {
+  .menu .images {
+    justify-content: center;
+  }
+}
+.menu .images .image-link {
+  width: 15vw;
+  margin: 0 12px;
+  overflow: hidden;
+}
+@media screen and (max-width: 480px) {
+  .menu .images .image-link {
+    width: 40vw;
+    margin: 0 12px 12px 0;
+  }
+}
+.menu .images .image-link .image {
+  position: relative;
+  transition: 0.6s;
+}
+.menu .images .image-link .image::before {
+  position: absolute;
+  content: attr(data-label);
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: 0.4s;
+}
+.menu .images .image-link:hover .image {
+  transform: scale(1.2);
+}
+.menu .images .image-link:hover .image::before {
+  opacity: 1;
+}
+.menu .images img {
+  height: 250px;
+  transform: translateY(102%);
+}
+
+.section-products {
+  padding: 80px 0 54px;
+}
+.section-products .header {
+  margin-bottom: 50px;
+}
+.section-products .header h3 {
+  font-size: 1rem;
+  color: #fe302f;
+  font-weight: 500;
+}
+.section-products .header h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #444444;
+}
+.section-products .single-product {
+  margin-bottom: 26px;
+}
+.section-products .single-product .part-1 {
+  position: relative;
+  height: 290px;
+  max-height: 290px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.section-products .single-product .part-1::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.3s;
+}
+.section-products .single-product .part-1 .discount {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: #ffffff;
+  background-color: #fe302f;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+.section-products .single-product .part-1 .new {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: #ffffff;
+  background-color: #fe302f;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  left: 0;
+  background-color: #444444;
+}
+.section-products .single-product .part-1 ul {
+  position: absolute;
+  bottom: -41px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  transition: bottom 0.5s, opacity 0.5s;
+}
+.section-products .single-product .part-1 ul li {
+  display: inline-block;
+  margin-right: 4px;
+}
+.section-products .single-product .part-1 ul li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ffffff;
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 2px 20px rgba(50, 50, 50, 0.1);
+  transition: color 0.2s;
+}
+.section-products .single-product .part-1 ul li a:hover {
+  color: #fe302f;
+}
+.section-products .single-product:hover .part-1::before {
+  transform: scale(1.2, 1.2) rotate(5deg);
+}
+.section-products .single-product:hover .part-1 ul {
+  bottom: 30px;
+  opacity: 1;
+}
+.section-products .single-product .part-2 .product-title {
+  font-size: 1rem;
+}
+.section-products .single-product .part-2 h4 {
+  display: inline-block;
+  font-size: 1rem;
+}
+.section-products .single-product .part-2 .product-old-price {
+  position: relative;
+  padding: 0 7px;
+  margin-right: 2px;
+  opacity: 0.6;
+}
+.section-products .single-product .part-2 .product-old-price::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #444444;
+  transform: translateY(-50%);
+}
+.section-products #product-1 .part-1::before {
+  background: url("https://i.ibb.co/L8Nrb7p/1.jpg") no-repeat center;
+  background-size: cover;
+  transition: all 0.3s;
+}
+.section-products #product-2 .part-1::before {
+  background: url("/images/remeras.jpg") no-repeat center;
+  background-size: cover;
+}
+.section-products #product-3 .part-1::before {
+  background: url("/images/gorros.jpg") no-repeat center;
+  background-size: cover;
+}
+.section-products #product-4 .part-1::before {
+  background: url("/images/tarjetaregalo.jpg") no-repeat center;
+  background-size: cover;
+}
+.section-products #product-5 .part-1::before {
+  background: url("/images/tickets.jpg") no-repeat center;
+  background-size: cover;
+}
+.section-products #product-6 .part-1::before {
+  background: url("/images/mochilaptop.jpg") no-repeat center;
+  background-size: cover;
+}
+.section-products #product-7 .part-1::before {
+  background: url("/images/headphones.jpg") no-repeat center;
+  background-size: cover;
+}
+.section-products #product-8 .part-1::before {
+  background: url("/images/bolsodeportivo.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.contact-form {
+  background: #fff;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 70%;
+}
+
+.contact-form .form-control {
+  border-radius: 1rem;
+}
+
+.contact-image {
+  text-align: center;
+}
+
+.contact-image img {
+  border-radius: 6rem;
+  width: 11%;
+  margin-top: -3%;
+  transform: rotate(29deg);
+}
+
+.contact-form form {
+  padding: 14%;
+}
+
+.contact-form form .row {
+  margin-bottom: -7%;
+}
+
+.contact-form h3 {
+  margin-bottom: 8%;
+  margin-top: -10%;
+  text-align: center;
+  color: #0062cc;
+}
+
+.contact-form .btnContact {
+  width: 50%;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: #dc3545;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btnContactSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: #0062cc;
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: #f7eee1;
+}
+
+.image-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.empresa {
+  padding-top: 4rem;
+  border-top: 1rem, #ff8800, solid;
+}
+
+.logo-chico {
+  width: 8rem;
+}
+
+footer {
+  padding-top: 4rem;
+  width: 100%;
+  border-top: 1rem, #ff8800, solid;
+}
+
+#modificable {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration: solid;
+  text-shadow: 1rem;
+}
+
+#tablita {
+  text-align: center;
+  background-color: white;
+  table-layout: auto;
+}
+#tablita th {
+  border: 1px, solid;
+  padding: 1rem;
+}
+#tablita tr td {
+  border: 2px, solid;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
