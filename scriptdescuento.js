@@ -1,7 +1,7 @@
 // Creo la Clase del Producto
 
 class ProductoConDescuento{
-    constructor(nombre, precio, descuento){
+    constructor(nombre, precio, descuento, precioDescuento){
         this.nombre = nombre;
         this.precio = precio
         this.descuento = descuento;
