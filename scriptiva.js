@@ -24,6 +24,8 @@ const nuevoProducto = () => {
     
     alert(`el precio final de su ${nombre} es $ ${precioIva}`)
 
+    precioIva > 20000 ? alert(`Por compras de Productos mayores a $20000, hay descuentos especiales, pidelos en atencipn al cliente!!`) : alert(`Realizando compras mayores a $20000 puedes obtener descuentos especiales, no dejes pasar la oportunidad!!!`);
+
 
 
     // Creo el nuevo producto con los datos obtenidos anteriormente
