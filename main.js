@@ -1,5 +1,16 @@
-let bienvenida = prompt("Como te llamas?");
+let bienvenida = swal("Hola, como te llamas?",{
+    button: {text: "Yeah!", closeModal: true},
+    content: "input",
+    input: "text",
+    icon: "info"
+})
+    .then((nome) => {
+        swal(`gracias por visitar nuestra pagina ${nome}`);
+    });
 
+    nome = bienvenida
+
+    
 let titulo = document.getElementById("modificable");
 
 titulo.innerText = `BIENVENIDO A NUESTRO SITIO ${bienvenida}`;
