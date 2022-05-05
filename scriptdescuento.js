@@ -1,7 +1,7 @@
 // Creo la Clase del Producto
 
 class ProductoConDescuento{
-    constructor(nombre, precio, descuento){
+    constructor(nombre, precio, descuento, precioDescuento){
         this.nombre = nombre;
         this.precio = precio
         this.descuento = descuento;
@@ -26,7 +26,9 @@ const nuevoProductDesc = () => {
         return(precio - (descuento * precio / 100 ));
     }
 
-    alert(`El precio final de ${nombre} es $ ${precioDescuento}`)
+    alert(`El precio final de ${nombre} es $ ${precioDescuento}`);
+
+    descuento <= 50 ? alert(`Comprando mas productos puedes acceder a mejores descuentos!!`) : alert(`Felicitaciones, has adquirido nuestros productos con el mejor descuento`);
 
     // creo el nuevo producto para el array
 
