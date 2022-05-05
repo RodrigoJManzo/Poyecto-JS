@@ -249,6 +249,9 @@
 #formulario #calcular {
   display: block;
   width: auto;
+  background-color: rgba(230, 77, 6, 0.7333333333);
+  border-radius: 10%;
+  color: #613f00;
 }
 #formulario P {
   padding-top: 2rem;
