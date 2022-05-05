@@ -28,9 +28,31 @@ body{
 
 footer{
     padding-top: 4rem;
-    width: 100%;
-    border-top: 1rem, rgb(255, 136, 0), solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    ul{
+        li{
+            list-style-type: none;
+            a{
+                img{
+                   size: 2cm;
+                }
+            }
+        }
+    
+    }
 }
+
+    .firma{
+        display: block;
+        padding-top: 3rem;
+        text-align: center;
+        color: brown;
+    }
+
+
 
 #modificable{
     text-align: center;
