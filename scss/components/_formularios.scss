@@ -1,0 +1,38 @@
+#formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0%;
+        input{
+            display: block;
+            width: 20%;
+        }
+        label{
+            display: block;
+            width: auto;
+            padding-top: 2rem;
+        }
+        div{
+            display: block;       
+        }
+        #calcular{
+            display: block;
+            width: auto;
+        }
+        P{
+            padding-top: 2rem;
+        }
+   
+}
+H2{
+    text-align: center;
+}
+#tablita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

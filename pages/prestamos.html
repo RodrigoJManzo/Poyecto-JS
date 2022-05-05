@@ -85,38 +85,51 @@
   <!--fin del header-->
 
   <!--COMIENZO DEL FORMULARIO-->
-    <form>
-      <form>
-        <input id="inputUno" type="number" placeholder="MONTO TOTAL" required autofocus />
+    
+      <form id="formulario">
+
         <label for="inputUno">
           <span class="label-text">MONTO TOTAL</span>
           <span class="nav-dot"></span>
-          <div class="signup-button-trigger">CALCULO</div>
         </label>
-        <input id="inputDos" type="number" placeholder="CANTIDAD DE CUOTAS" required />
+        <input id="inputUno" type="number" placeholder="MONTO TOTAL" required autofocus />
+
+        
+        
         <label for="inputDos">
           <span class="label-text">CUOTAS</span>
           <span class="nav-dot"></span>
         </label>
-        <input id="inputTres" type="text" placeholder="INTERES" required />
+        <input id="inputDos" type="number" placeholder="CANTIDAD DE CUOTAS" required />
+
+       
+
         <label for="inputTres">
           <span class="label-text">INTERES POR PAGO EN CUOTAS</span>
           <span class="nav-dot"></span>
         </label>
-        <input id="inputCuatro" type="text" placeholder="NOMBRE" required />
+        <input id="inputTres" type="text" placeholder="INTERES" required />
+
+        
+
         <label for="inputCuatro">
           <span class="label-text">NOMBRE</span>
           <span class="nav-dot"></span>
         </label>
-        <button id="calcular" type="submit">CALCULE SU DESCUENTO</button>
-        <p class="tip">Press Tab</p>
-        <div class="signup-button">CALCULE SU PRESTAMO</div>
+        <input id="inputCuatro" type="text" placeholder="NOMBRE" required />
+
+        
+        
+        <p class="tip">PRECIONE EL BOTON PARA OBTENER SU RESULTADO</p>
+        <button id="calcular" type="submit">CALCULE SU PRESTAMO</button>
+        <div class="signup-button"></div>
       </form>
-      </form>
+    
   <!--FIN DEL FORMULARIO-->
 
   <!--Comienzo de tabla de intereses por cuota-->
 
+<h2><strong>TABLA DE INTERESES</strong></h2>
     <table id="tablita">
       <tr>
         <th>Cantidad de Cuotas</th>

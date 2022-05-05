@@ -224,6 +224,46 @@
   transform: translateY(102%);
 }
 
+#formulario {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0%;
+}
+#formulario input {
+  display: block;
+  width: 20%;
+}
+#formulario label {
+  display: block;
+  width: auto;
+  padding-top: 2rem;
+}
+#formulario div {
+  display: block;
+}
+#formulario #calcular {
+  display: block;
+  width: auto;
+}
+#formulario P {
+  padding-top: 2rem;
+}
+
+H2 {
+  text-align: center;
+}
+
+#tablita {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .section-products {
   padding: 80px 0 54px;
 }

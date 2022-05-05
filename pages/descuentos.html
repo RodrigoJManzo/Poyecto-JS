@@ -84,27 +84,29 @@
 
 
   <!--COMIENZO DEL FORMULARIO-->
-    <form>
+    <form id="formulario">
+
+      <label for="inputUno">
+        <span class="label-text">PRECIO TOTAL</span>
+        <span class="nav-dot"></span>
+        <div class="signup-button-trigger"></div>
+      </label>
         <input id="inputUno" type="number" placeholder="PRECIO TOTAL" required autofocus />
-        <label for="inputUno">
-          <span class="label-text">PRECIO TOTAL</span>
-          <span class="nav-dot"></span>
-          <div class="signup-button-trigger"></div>
-        </label>
-        <input id="inputDos" type="number" placeholder="DESCUENTO" required />
         <label for="inputDos">
           <span class="label-text">DESCUENTO</span>
           <span class="nav-dot"></span>
         </label>
-        <input id="inputTres" type="text" placeholder="Nombre del Producto" required />
+        <input id="inputDos" type="number" placeholder="DESCUENTO" required />
         <label for="inputTres">
           <span class="label-text">Nombre del Producto</span>
           <span class="nav-dot"></span>
         </label>
+        <input id="inputTres" type="text" placeholder="Nombre del Producto" required />
+        <p class="tip">PRECIONE EL BOTON PARA CALCULAR SU DESCUENTO</p>
         <button id="calcular" type="submit">CALCULE SU DESCUENTO</button>
-        <p class="tip">Press Tab</p>
+        
         <div class="signup-button"></div>
-      </form>
+    </form>
 <!--FIN DEL FORMULARIO-->
 <!--COMIENZO DEL FOOTER-->
 <footer>
