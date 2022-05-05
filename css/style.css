@@ -257,10 +257,6 @@
   padding-top: 2rem;
 }
 
-H2 {
-  text-align: center;
-}
-
 #tablita {
   display: flex;
   justify-content: center;
@@ -274,14 +270,14 @@ H2 {
   margin-bottom: 50px;
 }
 .section-products .header h3 {
-  font-size: 1rem;
-  color: #fe302f;
+  font-size: 3rem;
+  color: #a5432a;
   font-weight: 500;
 }
 .section-products .header h2 {
   font-size: 2.2rem;
   font-weight: 400;
-  color: #444444;
+  color: #a5432a;
 }
 .section-products .single-product {
   margin-bottom: 26px;
@@ -522,6 +518,18 @@ footer {
 #tablita tr td {
   border: 2px, solid;
   padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  color: #a5432a;
+  padding-top: 3rem;
+}
+
+h2 {
+  text-align: center;
+  color: #a5432a;
+  padding-top: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
