@@ -36,4 +36,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    table-layout: auto;
+th{
+    border: 1px, solid;
+    padding: 1rem;
+}
+tr{
+    td{
+        border: 2px,solid;
+        padding: 1rem;
+    }
+}
+
+    
 }

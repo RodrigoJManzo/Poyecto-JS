@@ -261,6 +261,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  background-color: white;
+  table-layout: auto;
+}
+#tablita th {
+  border: 1px, solid;
+  padding: 1rem;
+}
+#tablita tr td {
+  border: 2px, solid;
+  padding: 1rem;
 }
 
 .section-products {
@@ -516,20 +527,6 @@ footer ul li a img {
   padding-top: 3rem;
   text-align: center;
   color: brown;
-}
-
-#tablita {
-  text-align: center;
-  background-color: white;
-  table-layout: auto;
-}
-#tablita th {
-  border: 1px, solid;
-  padding: 1rem;
-}
-#tablita tr td {
-  border: 2px, solid;
-  padding: 1rem;
 }
 
 h1 {
