@@ -13,41 +13,41 @@ const productos = [
 
 //Genero la funcion para que, tomando los datos ingresados para realizar el calculo, construya un objeto
 
-function ProductoNuevo (nombre, id, precio) {
-    this.nombre = prompt("Cual es el nombre del Producto?");
-    this.id = prompt("cual es la ID del Producto?");
-    this.precio = prompt("cual es el precio del producto?");  
-}
+// function ProductoNuevo (nombre, id, precio) {
+//     this.nombre = prompt("Cual es el nombre del Producto?");
+//     this.id = prompt("cual es la ID del Producto?");
+//     this.precio = prompt("cual es el precio del producto?");  
+// }
 
 
-// Funcion para agregar mas productos
-const producto = new ProductoNuevo ();
+// // Funcion para agregar mas productos
+// const producto = new ProductoNuevo ();
 
 
-//Agrego el objeto recientemente creado al Array!!!
-productos.push(producto);
-console.log (productos);
+// //Agrego el objeto recientemente creado al Array!!!
+// productos.push(producto);
+// console.log (productos);
 
-//funcion para filtrar en la tienda por nombre
+// //funcion para filtrar en la tienda por nombre
 
-let filtradoPorNombre = prompt("nombre del producto a filtrar?");
-const resultadoPorNombre = productos.filter((el) => el.nombre.includes (filtradoPorNombre));
-let resultadoNom = resultadoPorNombre
-console.log(` el resultado es ${resultadoNom}`);
-
-
-//funcion para filtrar en la tienda por precio
+// let filtradoPorNombre = prompt("nombre del producto a filtrar?");
+// const resultadoPorNombre = productos.filter((el) => el.nombre.includes (filtradoPorNombre));
+// let resultadoNom = resultadoPorNombre
+// console.log(` el resultado es ${resultadoNom}`);
 
 
-let filtradoPorPrecio = prompt("precio del producto a filtrar?");
-const resultadoPorPrecio = productos.filter((el) => el.nombre.includes(filtradoPorPrecio));
-let resultadoPrec = resultadoPorPrecio
-console.log(`el resultado es ${resultadoPrec}`);
+// //funcion para filtrar en la tienda por precio
 
 
-//funcion de busqueda de productos 
+// let filtradoPorPrecio = prompt("precio del producto a filtrar?");
+// const resultadoPorPrecio = productos.filter((el) => el.nombre.includes(filtradoPorPrecio));
+// let resultadoPrec = resultadoPorPrecio
+// console.log(`el resultado es ${resultadoPrec}`);
 
-let buscar = prompt("cual es el nombre del producto a buscar?");
-const resultadoBusqueda = productos.find((el) => el.nombre === buscar);
-let resultadoBusq = resultadoBusqueda
-console.log(`el resultado es ${resultadoBusq}`);
+
+// //funcion de busqueda de productos 
+
+// let buscar = prompt("cual es el nombre del producto a buscar?");
+// const resultadoBusqueda = productos.find((el) => el.nombre === buscar);
+// let resultadoBusq = resultadoBusqueda
+// console.log(`el resultado es ${resultadoBusq}`);
