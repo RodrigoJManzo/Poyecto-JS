@@ -27,9 +27,7 @@ const nuevaPersona = () => {
         return(monto + (interes * monto /100))
     }
 
-alert(`El monto total a pagar en ${cuotas} cuotas es ${montoTotal}`)
-
-montoTotal > 10000 ? console.log(`Sacando cantidades mas grandes, puedes obtener mejores beneficios`) : console.log(`Con el monto solicitado no obtienes beneficios`);
+swal(`El monto total a pagar en ${cuotas} cuotas es ${montoTotal}`)
 
 //se crea el nuevo producto con los datos ingresados
 let persona1 = new Persona (nombre, monto, interes, cuotas, montoTotal);
@@ -51,4 +49,8 @@ localStorage.setItem ("persona1", JSON.stringify(prestamos));
 let boton = document.getElementById("calcular");
 boton.addEventListener("click", nuevaPersona);
 console.log(prestamos);
+
+
+
+
 
