@@ -486,11 +486,15 @@ body {
 
 .empresa {
   padding-top: 4rem;
-  border-top: 1rem, #ff8800, solid;
 }
-
-.logo-chico {
-  width: 8rem;
+.empresa div div .logo-chico {
+  width: 20rem;
+  border-radius: 10%;
+}
+.empresa div div p {
+  text-size-adjust: 3rem;
+  text-align: justify;
+  text-decoration: double;
 }
 
 footer {
@@ -504,7 +508,7 @@ footer ul li {
   list-style-type: none;
 }
 footer ul li a img {
-  size: 2cm;
+  width: 1cm;
 }
 
 .firma {
@@ -512,13 +516,6 @@ footer ul li a img {
   padding-top: 3rem;
   text-align: center;
   color: brown;
-}
-
-#modificable {
-  text-align: center;
-  text-decoration: underline;
-  text-decoration: solid;
-  text-shadow: 1rem;
 }
 
 #tablita {

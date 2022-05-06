@@ -19,11 +19,23 @@ body{
 
 .empresa{
     padding-top: 4rem;
-    border-top: 1rem, rgb(255, 136, 0), solid;
-   }
-
-.logo-chico{
-    width: 8rem;
+    
+        div{
+            div{
+                .logo-chico{
+                    width: 20rem;
+                    border-radius: 10%;
+                }
+            }
+            div{
+                p{
+                    text-size-adjust: 3rem;
+                    text-align: justify;
+                    text-decoration: double;
+                }
+            }
+        }
+    
 }
 
 footer{
@@ -37,7 +49,7 @@ footer{
             list-style-type: none;
             a{
                 img{
-                   size: 2cm;
+                   width: 1cm;
                 }
             }
         }
@@ -52,14 +64,6 @@ footer{
         color: brown;
     }
 
-
-
-#modificable{
-    text-align: center;
-    text-decoration: underline;
-    text-decoration: solid;
-    text-shadow: 1rem;
-}
 
 #tablita{
     text-align: center;
