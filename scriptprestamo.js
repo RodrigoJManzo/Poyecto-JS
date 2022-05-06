@@ -27,7 +27,7 @@ const nuevaPersona = () => {
         return(monto + (interes * monto /100))
     }
 
-swal(`El monto total a pagar en ${cuotas} cuotas es ${montoTotal}`)
+swal(`El monto total a pagar en ${cuotas} cuotas es $ ${montoTotal}`)
 
 //se crea el nuevo producto con los datos ingresados
 let persona1 = new Persona (nombre, monto, interes, cuotas, montoTotal);
