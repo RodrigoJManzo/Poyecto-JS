@@ -22,7 +22,7 @@ const nuevoProducto = () => {
 
     
     
-    swal(`el precio final de su ${nombre} es $ ${precioIva}`)
+    swal("RESULTADO", `el precio final de su ${nombre} es $ ${precioIva}`, "info")
 
 
     // Creo el nuevo producto con los datos obtenidos anteriormente

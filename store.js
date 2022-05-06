@@ -87,7 +87,7 @@ btncart8.addEventListener("click", add = () => {agregadoCarrito.push(buscar8)});
 
 // ver si los productos ya estan
 for(let i=0; i <agregadoCarrito.length; i++){
-    if(agregadoCarrito[i].getAttribute("id") == prodId1 || prodId2 || prodId3 || prodId4 || prodId5 || prodId6 || prodId7 || prodId8){
+    if(agregadoCarrito[i].getAttribute("id") === prodId1 || prodId2 || prodId3 || prodId4 || prodId5 || prodId6 || prodId7 || prodId8){
     swal(`este producto ya esta en su carro`);        
     }
 }
