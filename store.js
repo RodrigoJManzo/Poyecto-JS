@@ -11,16 +11,16 @@ const productos = [
     {"nombre":"sportBag", "id": 8 , "precio": 469.99 }
 ]
 
-for(const {nombre: a, id: b} of productos){
-    let prodName = a;
-    let prodId = b;
-    console.log(`nombre ${a}, id ${b}`)
-}
+
+console.log(productos.map(x => x.id))
+
+console.log(productos[0].id)
+
+
 
 //variables
 
 const addToCart = document.getElementsByClassName("addToCart");
-
 
 const cart = document.querySelector("#cart");
 
@@ -34,11 +34,17 @@ for(let i=0; i < addToCart.length; i++){
 }
 
 function agregarCarrito(e){
-    for(let i=0; i < addToCart.length; i++){
-    let boton = addToCart[i];
-    let cartItem = addToCart.find((el) => el.id === boton.id)}
-    console.log(cartItem);
-}
+    let boton = e.target;
+    console.log(boton);
+    for(const {nombre: a, id: b} of productos){
+        let prodName = a;
+        let prodId = b;
+        console.log(`nombre ${a}, id ${b}`)
+        let cartItem = productos.find((el) => el.id === prodId);
+        console.log(cartItem)
+    }
+   }
+
 
 
 
