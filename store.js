@@ -54,10 +54,6 @@ function agregarCarrito(e){
 
 
 
-
-
-
-
 // const cart = document.querySelector("#cart");
 // const agregadoCarrito = [];
 
