@@ -424,6 +424,32 @@
   background-size: cover;
 }
 
+.cart-btn {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#cart {
+  position: relative;
+  font-size: 2rem;
+  color: #a55b2a;
+  cursor: pointer;
+  margin: 1em 4em 0 0;
+}
+
+.cart-quantity {
+  color: white;
+  background-color: red;
+  padding: 0.2em 0.3em;
+  position: absolute;
+  margin: 0.8em 7.5em 0 0;
+  right: 0;
+  border: solid 2px red;
+  border-radius: 15px;
+  font-weight: bolder;
+}
+
 .contact-form {
   background: #fff;
   margin-top: 10%;
