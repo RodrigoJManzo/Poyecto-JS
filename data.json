@@ -1,11 +1,51 @@
 
 [
-    {"nombre":"calzadoDeportivo", "id": 1, "precio": 490.99},
-    {"nombre":"remeraDeportiva", "id": 2, "precio": 190.99 },
-    {"nombre":"gorro", "id": 3 , "precio": 89.99 },
-    {"nombre":"tarjetaRegalo", "id": 4 , "precio": 0 },
-    {"nombre":"ticketCine", "id": 5 , "precio": 449.99 },
-    {"nombre":"mochilaLaptop", "id": 6 , "precio": 499.99 },
-    {"nombre":"headphones", "id": 7 , "precio": 999.99 },
-    {"nombre":"sportBag", "id": 8 , "precio": 469.99 }
+    {
+        "link":"../images/championes.jpg" ,
+        "nombre":"Calzado Deportivo", 
+        "id": 1, 
+        "precio": 490.99
+    },
+    {
+        "link":"../images/remeras.jpg" ,
+        "nombre":"Remera Deportiva",
+        "id": 2, 
+        "precio": 190.99 
+    },
+    {
+        "link": "../images/gorros.jpg" ,
+        "nombre":"Gorros", 
+        "id": 3 , 
+        "precio": 89.99 
+    },
+    {
+        "link": "../images/tarjetaregalo.jpg" ,
+        "nombre":"Tarjeta de Regalo", 
+        "id": 4 , 
+        "precio": 0 
+    },
+    {
+        "link": "../images/tickets.jpg" ,
+        "nombre":"Ticket para Cine", 
+        "id": 5 , 
+        "precio": 449.99 
+    },
+    {
+        "link": "../images/mochilaptop.jpg" ,
+        "nombre":"Mochila para Laptop", 
+        "id": 6 , 
+        "precio": 499.99 
+    },
+    {
+        "link":"../images/headphones.jpg" ,
+        "nombre":"Headphones", 
+        "id": 7 , 
+        "precio": 999.99 
+    },
+    {
+        "link":"../images/bolsodeportivo.jpg" ,
+        "nombre":"Sport Bag", 
+        "id": 8 , 
+        "precio": 469.99 
+    }
 ]

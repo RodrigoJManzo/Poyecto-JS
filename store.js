@@ -1,19 +1,21 @@
 //variables
-const listaProductos = document.querySelector(`#lista`)
+const listaProductos = document.querySelector(`#container`)
 
 
 fetch(`../data.json`)
     .then((respuesta)=>respuesta.json())
     .then((datos)=> {
         datos.forEach((producto)=>{
-            const li = document.createElement(`li`)
-            li.innerHTML= `
-            <h3>${producto.nombre}</h3>
-            <p> $ ${producto.precio}</p>
-            <p> ID: ${producto.id}</p>
+            const list = document.createElement(`div`)
+            list.innerHTML= `
+            <div class="col-12 col-sm-4 col-md-6 col-lg-4">
+                <img class="card" src="${producto.link}" alt="">
+                <h3>${producto.nombre}</h3>
+                <p> $ ${producto.precio}</p>
+                <p> ID: ${producto.id}</p>
+            </div>
             `
-
-            listaProductos.append(li)
+            listaProductos.append(list)
         })
     })
 
