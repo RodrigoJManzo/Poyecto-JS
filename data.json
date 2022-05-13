@@ -1,0 +1,11 @@
+
+[
+    {"nombre":"calzadoDeportivo", "id": 1, "precio": 490.99},
+    {"nombre":"remeraDeportiva", "id": 2, "precio": 190.99 },
+    {"nombre":"gorro", "id": 3 , "precio": 89.99 },
+    {"nombre":"tarjetaRegalo", "id": 4 , "precio": 0 },
+    {"nombre":"ticketCine", "id": 5 , "precio": 449.99 },
+    {"nombre":"mochilaLaptop", "id": 6 , "precio": 499.99 },
+    {"nombre":"headphones", "id": 7 , "precio": 999.99 },
+    {"nombre":"sportBag", "id": 8 , "precio": 469.99 }
+]
